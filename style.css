@@ -74,8 +74,29 @@ nav {
 
 /* Hero Section */
 #hero {
-    background: grey;
+    background: olivegreen;
 }
 
 
 /* End of Hero Section */
+
+
+
+/* About Us Section */
+#about {
+    background: palevioletred;
+}
+
+
+/* End of About Us Section */
+
+
+
+/* Contact Us Section */
+#contact {
+    background: blue;
+}
+
+
+/* End of Contact Us Section */
+
