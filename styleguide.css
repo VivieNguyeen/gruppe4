@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #88b8aa;
+    scroll-behavior: smooth;
+    font-style: normal;
+    line-height: 1.65;
+    height: 300vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* Nav Bar Section */
+nav {
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    margin: 0;
+    z-index: 2;
+    top: 2.5%;
+}
+
+.some-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    padding-bottom: 5px;
+    margin-right: 5%;
+}
+
+.some-link img {
+    width: 20px;
+    position: relative;
+    top: 10%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 8vh;
+    position: relative;
+  }
+  
+  .nav-links li {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: .6rem;
+    position: relative;
+  }
+
+.nav-links li a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+  
+  .nav-links li:hover {
+    border-bottom: 2px solid white;
+  }
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    
+}
+
+.burger .line1, .burger .line2, .burger .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    color: white;
+    font-weight: 700;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+    /* Responsiv max-w 1015px */
+    @media only screen and (max-width: 1115px) {
+        body {
+            overflow-x: hidden;
+        }
+        
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            height: 88vh;
+            top: 12vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            max-width: 350px;
+            transform: translateX(100%);
+            transition: 0.5s ease-in;
+            font-size: .875rem;
+        }
+    
+        .nav-links li {
+            opacity: 0;
+            width: 100%;
+            transition: .2s;
+        }
+
+        .nav-links li:hover {
+            border-bottom: none;
+          }
+    
+        .nav-links a {
+            color: white;
+            width: 80%;
+            display: none;
+        }
+    
+        .burger {
+            display: block;
+            margin-right: 5%;
+        }
+    
+        .nav-active {
+            transform: translateX(0%);
+            background-color: #71998d;
+            opacity: 80%;
+        }
+        
+        .nav-active a {
+            display: block;
+        }
+        
+        .nav-active li:hover {
+            background: rgba(207, 207, 207, 0.15)
+        }
+        
+        .nav-links li:hover a {
+            color: white;
+            font-weight: 700;
+        }
+    
+        @keyframes navLinkFade {
+            from{
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+        .menu {
+            position: absolute;
+            transform: translateX(-55px);
+            color: white;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            top: 29px;
+        }
+
+        .toggle .line1{
+            transform: rotate(-45deg) translate(-5px,6px);
+        }
+    
+        .toggle .line2{
+            opacity: 0;
+        }
+    
+        .toggle .line3{
+            transform: rotate(45deg) translate(-5px,-6px);
+        }
+    }
+    /* End of Responsiv max-w 1015px */
+
+/* End of Nav Bar Section */
