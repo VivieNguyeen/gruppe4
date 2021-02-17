@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -11,16 +9,17 @@ html {
 }
 
 body {
-    background: #88b8aa;
+    background: #fff;
     scroll-behavior: smooth;
     font-style: normal;
+    font-family: Roboto, sans-serif, arial;
     line-height: 1.65;
     height: 300vh;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: #303030;
 }
 
 
@@ -38,18 +37,17 @@ nav {
     top: 2.5%;
 }
 
-.some-links {
+.logo {
     display: flex;
-    justify-content: space-around;
-    width: 20%;
-    padding-bottom: 5px;
-    margin-right: 5%;
+    width: 40%;
+    margin-left: 1%;
+    margin-right: 10%;
 }
 
-.some-link img {
-    width: 20px;
-    position: relative;
-    top: 10%;
+.logo img {
+    width: 350px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .nav-links {
@@ -64,8 +62,8 @@ nav {
     display: block;
     flex-grow: 1;
     text-align: center;
-    letter-spacing: 3px;
-    font-size: .6rem;
+    letter-spacing: 0;
+    font-size: 14px;
     position: relative;
   }
 
@@ -77,13 +75,12 @@ nav {
 }
   
   .nav-links li:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #303030;
   }
 
 .nav-links a {
-    color: #ffffff;
+    color: #303030;
     text-decoration: none;
-    letter-spacing: 3px;
 }
 
 .burger {
