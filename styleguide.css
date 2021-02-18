@@ -33,6 +33,7 @@ nav {
     height: 12vh;
     margin: 0;
     z-index: 2;
+    padding-right: 30px;
 }
 
 .logo {
@@ -100,7 +101,7 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 5px;
 }
 
 .burger .line1, .burger .line2, .burger .line3 {
