@@ -74,7 +74,7 @@ nav {
     margin-top: 10px;
   }
   
-  .nav-links li {
+.nav-links li {
     display: block;
     flex-grow: 1;
     text-align: center;
@@ -89,7 +89,7 @@ nav {
     transform: translate(-50%,-50%);
 }
   
-  .nav-links li:hover {
+.nav-links li:hover {
     border-bottom: 2px solid #303030;
   }
 
@@ -223,18 +223,38 @@ nav {
 
 
 
+/* Code boxes */
+    .code-box h1 {
+
+    }
+
+    .code-box {
+        height: 200px;
+        width: 450px;
+        text-align: left;
+        background-color: #56a1d388;
+        color: #fff;
+        border-radius: 20px;
+        padding: 20px;
+        position: relative;
+        transform: translateX(150%);
+    }
+
+
+    .code {
+
+    }
+
+/* End of Code boxes */
+
+
 
 
 /* Intro Section */
 #intro {
     margin: 40px 0 0 40px;
-
+    text-align: center;
 }
-
-.intro-text {
-
-}
-
 /* End of Intro Section */
 
 
