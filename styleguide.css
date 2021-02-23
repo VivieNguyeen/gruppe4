@@ -261,7 +261,7 @@ nav {
   margin-top: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
 }
 
 .logo-head {
@@ -284,7 +284,7 @@ nav {
   height: auto;
   width: 80%;
   position: relative;
-  top: -70px;
+  top: -200px;
 }
 
 .logo-text2 {
@@ -292,13 +292,21 @@ nav {
   grid-row: 3/3;
   font-size: 14px;
   position: relative;
-  top: -120px;
+  top: -300px;
+  align-items: center;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 120px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .code-box-logo1 {
   grid-column: 2/2;
   grid-row: 1/2;
-  height: 200px;
+  height: 300px;
   width: 80%;
   text-align: left;
   background-color: #56a1d3;
@@ -313,7 +321,7 @@ nav {
 .code-box-logo2 {
   grid-column: 2/2;
   grid-row: 2/3;
-  height: 200px;
+  height: 300px;
   width: 80%;
   text-align: left;
   background-color: #56a1d3;
@@ -381,6 +389,14 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  align-items: center;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 170px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .code-box-typo1 {
@@ -476,7 +492,7 @@ nav {
   font-size: .7rem;
   text-align: center;
   position: relative;
-  top: 40%;
+  top: 45%;
   color: #303030;
 }
 
@@ -493,7 +509,7 @@ nav {
   font-size: .7rem;
   text-align: center;
   position: relative;
-  top: 40%;
+  top: 45%;
   color: #fff;
 }
 
@@ -511,7 +527,7 @@ nav {
   font-size: .7rem;
   text-align: center;
   position: relative;
-  top: 40%;
+  top: 45%;
   color: #fff;
 }
 
@@ -521,7 +537,23 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  align-items: center;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 320px;
+  max-width: 400px;
+  margin: 0 auto;
 }
+
+    /* Responsiv max-w 1015px */
+    @media only screen and (max-width: 875px) {
+      .col-text {
+        overflow: scroll;
+      }
+    }
+
 
 .code-box-col1 {
   grid-column: 2/2;
@@ -608,6 +640,10 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .code-box-navi1 {
@@ -695,6 +731,10 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .code-box-forms1 {
@@ -782,6 +822,10 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .code-box-btns1 {
@@ -869,6 +913,10 @@ nav {
   font-size: 14px;
   position: relative;
   top: -120px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .code-box-icons1 {
