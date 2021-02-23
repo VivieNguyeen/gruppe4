@@ -307,6 +307,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-logo2 {
@@ -321,6 +322,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-logo3 {
@@ -335,6 +337,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /* End of Logo Section */
 
@@ -346,6 +349,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
+  overflow: scroll;
 }
 
 .typo-head {
@@ -391,6 +395,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-typo2 {
@@ -405,6 +410,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
 .code-box-typo3 {
@@ -419,6 +425,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }*/
 /* End of Typografi Section */
 
@@ -446,13 +453,66 @@ nav {
   flex: 1;
 }
 
-.col-img img {
+.col-box {
   grid-column: 1/1;
   grid-row: 2/2;
-  height: auto;
-  width: 80%;
+  height: 200px;
+  width: 100%;
   position: relative;
-  top: -70px;
+  top: -100px;
+  /*overflow: hidden;*/
+}
+
+.hex-box1 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: 0px;
+  background-color: #fff;
+  border: 3px solid #303030;
+}
+
+.hex-box1 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: #303030;
+}
+
+.hex-box2 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: -150px;
+  left: 33%;
+  background-color: #303030;
+}
+
+.hex-box2 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: #fff;
+}
+
+.hex-box3 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: -300px;
+  left: 66%;
+  background-color: #56a0d3;
+  border: 3px solid #303030;
+}
+
+.hex-box3 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: #fff;
 }
 
 .col-text {
@@ -475,12 +535,13 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-col2 {
   grid-column: 2/2;
   grid-row: 2/3;
-  height: 200px;
+  height: 250px;
   width: 80%;
   text-align: left;
   background-color: #56a1d3;
@@ -489,6 +550,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
   .code-box-col3 {
@@ -503,6 +565,7 @@ nav {
     padding: 20px;
     position: relative;
     margin: 0 auto 80px auto;
+    overflow: scroll;
   }*/
 /* End of Color Section */
 
@@ -559,6 +622,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-navi2 {
@@ -573,6 +637,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
     .code-box-navi3 {
@@ -587,6 +652,7 @@ nav {
       padding: 20px;
       position: relative;
       margin: 0 auto 80px auto;
+      overflow: scroll;
     }*/
 /* End of Navigation Section */
 
@@ -643,6 +709,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-forms2 {
@@ -657,6 +724,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
     .code-box-forms3 {
@@ -671,6 +739,7 @@ nav {
       padding: 20px;
       position: relative;
       margin: 0 auto 80px auto;
+      overflow: scroll;
     }*/
 /* End of Forms Section */
 
@@ -727,6 +796,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-btns2 {
@@ -741,6 +811,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
     .code-box-btns3 {
@@ -755,6 +826,7 @@ nav {
       padding: 20px;
       position: relative;
       margin: 0 auto 80px auto;
+      overflow: scroll;
     }*/
 /* End of Buttons Section */
 
@@ -811,6 +883,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 
 .code-box-icons2 {
@@ -825,6 +898,7 @@ nav {
   padding: 20px;
   position: relative;
   margin: 0 auto 80px auto;
+  overflow: scroll;
 }
 /*
     .code-box-icons3 {
@@ -839,5 +913,6 @@ nav {
         padding: 20px;
         position: relative;
         margin: 0 auto 80px auto;
+        overflow: scroll;
       }*/
 /* End of Icons Section */

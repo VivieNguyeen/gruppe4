@@ -5,7 +5,7 @@
     
     <link rel="stylesheet" type="text/css" href="styleguide.css">
     
-    <title>UR Styleguide</title>
+    <title>Styleguide | Universal Robots</title>
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <!-- Nav -->
     <nav>
         <div class="logo">
-            <a href="index.html">
+            <a href="#intro">
                 <img src="./img/ur-logo.png" alt="logo">
             </a>
 
@@ -28,28 +28,28 @@
 
         <ul class="nav-links">
             <li>
-                <a href="#">Intro</a>
+                <a href="#intro">Intro</a>
             </li>
             <li>
-                <a href="#">Logo</a>
+                <a href="#logo">Logo</a>
             </li>
             <li>
-                <a href="#">Typografi</a>
+                <a href="#typo">Typografi</a>
             </li>
             <li>
-                <a href="#">Farver</a>
+                <a href="#color">Farver</a>
             </li>
             <li>
-                <a href="#">Navigation</a>
+                <a href="#navi">Navigation</a>
             </li>
             <li>
-                <a href="#">Forms</a>
+                <a href="#forms">Forms</a>
             </li>
             <li>
-                <a href="#">Knapper</a>
+                <a href="#btns">Knapper</a>
             </li>
             <li>
-                <a href="#">Ikoner</a>
+                <a href="#icons">Ikoner</a>
             </li>
         </ul>
 
@@ -100,17 +100,21 @@
         <div class="code-box-logo1">
             <h1>Code Snippet (HTML):</h1>
             <code class="code">
-                html {
-                    font-family: Roboto, sans-serif, arial;
-                }
+
+                &lt;div class="logo-text2"&gt;
+                    &lt;b&gt;Anvendelse:&lt;/b&gt; Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+                &lt;/div&gt;
+                
             </code>
         </div>
 
         <div class="code-box-logo2">
             <h1>Code Snippet (CSS):</h1>
-            <code class="code">
-                test
-            </code>
+            <pre>
+                <code class="code">
+                    
+                </code>
+            </pre>
         </div>
 
         <div class="code-box-logo3">
@@ -177,12 +181,24 @@
             <div class="col-line"></div>
         </div>
 
-        <div class="col-img">
-            <img src="./img/ur-logo.png" alt="logo">
+        <div class="col-box">
+            <div class="hex-box1">
+                <p>HEX #FFFFFF</p>
+            </div>
+            <div class="hex-box2">
+                <p>HEX #303030</p>
+            </div>
+            <div class="hex-box3">
+                <p>HEX #56A0D3</p>
+            </div>
         </div>
 
         <div class="col-text">
-            <b>Anvendelse:</b> Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+            <b>Anvendelse:</b> De tre ovenstående farver bruges igennem hele websitedesignet, 
+            og afspejler de farver Universal Robots bruger på deres hjemmeside.
+            Den hvide farve (HEX #fff) bruges til baggrund samt tekst elementer som har brug for en anden kontrastfarve, eksempelvis teksten på de blå knapper.
+            Den mørkegrå farve (HEX #303030) bruges til al tekst på hvid baggrund samt tekst på billedelementer. Den bruges lige så til footer og designelementer som skal skabe moduler og opdeling i designet.
+            Den blå farve (HEX #56a0d3) bruges til knapper, links, citater og ikoner samt i designelementer i eksempelvis videoafspilleren på sitet.
         </div>
 
         <div class="code-box-col1">
@@ -197,7 +213,14 @@
         <div class="code-box-col2">
             <h1>Code Snippet (CSS):</h1>
             <code class="code">
-                test
+                .hex-box1 { <br>
+                    height: 150px;<br>
+                    width: 33%;<br>
+                    position: relative;<br>
+                    top: 0px;<br>
+                    background-color: #fff;<br>
+                    border: 3px solid #303030;<br>
+                  }
             </code>
         </div>
 
@@ -218,7 +241,7 @@
     <section id="navi">
 
         <div class="navi-head">
-            <h2>Navigtion</h2>
+            <h2>Navigation</h2>
             <div class="navi-line"></div>
         </div>
 
