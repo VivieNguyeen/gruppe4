@@ -722,6 +722,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10% 80% 10%;
+  grid-gap: 5%;
   position: relative;
   top: -180px;
 }
@@ -733,10 +734,7 @@ nav {
   width: 200%;
   margin: 0 auto;
   position: relative;
-  top: 20px;
   text-align: center;
-  padding: 10px;
-  background-color: pink;
 }
 
 .forms-p1 {
@@ -747,15 +745,14 @@ nav {
   max-width: 50vw;
   position: relative;
   top: 100px;
-  background-color: rgb(196, 196, 196);
 }
 
 .forms-p1 input {
-  margin: 10px 10px;
+  margin-top: 20px;
   padding: 5px;
-  border-radius: 5px;
-  width: auto;
-  border: transparent;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #303030;
 }
 
 .forms-p2 {
@@ -766,31 +763,46 @@ nav {
   max-width: 50vw;
   position: relative;
   top: 100px;
-  background-color: rgb(208, 208, 208);
 }
 
-.forms-p2 input, .forms-p2 textarea {
-  margin: 10px 10px;
+.forms-p2 input {
+  margin-top: 20px;
   padding: 5px;
-  border-radius: 5px;
-  width: auto;
-  border: transparent;
-  }
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #303030;
+}
+
+.forms-p2 textarea {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  height: 23vh;
+  border: 1px solid #303030;
+}
 
 .forms-btn {
   grid-column: 1/2;
   grid-row: 3/3;
-  height: 5vh;
-  width: 200%;
+  height: 10vh;
+  width: 210%;
+  margin-top: 20px;
   position: relative;
-  top: 140px;
-  background-color: rgb(193, 112, 112);
+  top: 100px;
+  text-align: center;
 }
 
 .forms-btn button {
-  margin-top: 10px;
+  margin-top: 15px;
   position: relative;
-  left: 45%;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #56a0d3;
+  color: #fff;
+  height: 5vh;
+  width: 150px;
 }
 
     /* Responsiv max-w 815px */
@@ -810,7 +822,7 @@ nav {
   grid-row: 3/3;
   font-size: 14px;
   position: relative;
-  top: -0px;
+  top: 100px;
   background-color: #303030;
   color: #fff;
   border-radius: 10px;
