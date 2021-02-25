@@ -931,6 +931,17 @@ nav {
   top: 30px;
 }
 
+.btns-showcase {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  position: relative;
+  margin: 0 auto;
+  width: 45vw;
+  height: 30vh;
+  text-align: center;
+  top: 40px;
+}
+
 .btns:hover {
     color: #fff;
     padding: 4px 8px 15px 8px;
@@ -950,7 +961,7 @@ nav {
 .btns:hover:after{
   width:22px;
 }
-
+/*
 .btns1{
   position: relative;
   display: inline-block;
@@ -992,7 +1003,7 @@ nav {
 .btns1:hover:after{
   width:22px;
 }
-
+*/
 .btns-text {
   grid-column: 1/1;
   grid-row: 3/3;
@@ -1006,6 +1017,7 @@ nav {
   height: 120px;
   max-width: 400px;
   margin: 0 auto;
+  top: -90;
 }
 
 .code-box-btns1 {
