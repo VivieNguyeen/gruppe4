@@ -887,13 +887,88 @@ nav {
   flex: 1;
 }
 
-.btns-img img {
-  grid-column: 1/1;
-  grid-row: 2/2;
-  height: auto;
-  width: 80%;
+.btns{
   position: relative;
-  top: -70px;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 19px 3px 19px;
+  min-width: 250px;
+  border: 0;
+  border-radius: 100px;
+  background-color:#56a0d3;
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  outline: 0;
+  transition: padding .2s;
+  top: 30px;
+}
+
+.btns:hover {
+    color: #fff;
+    padding: 4px 8px 15px 8px;
+}
+
+.btns:after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  background: transparent url(img/arrow.png) no-repeat right top;
+  background-size: auto 25px;
+  height: 25px;
+  transition: width .2s;
+  }
+
+.btns:hover:after{
+  width:22px;
+}
+
+.btns1{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 19px 3px 19px;
+  min-width: 250px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2e7aaf;
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  outline: 0;
+  transition: padding .2s;
+  top: 30px;
+}
+
+.btns1:hover {
+    color: #fff;
+    padding: 4px 8px 15px 8px;
+}
+
+.btns1:after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  background: transparent url(img/arrow.png) no-repeat right top;
+  background-size: auto 25px;
+  height: 25px;
+  transition: width .2s;
+}
+
+.btns1:hover:after{
+  width:22px;
 }
 
 .btns-text {
@@ -901,7 +976,7 @@ nav {
   grid-row: 3/3;
   font-size: 14px;
   position: relative;
-  top: -120px;
+  top: -40px;
   background-color: #303030;
   color: #fff;
   border-radius: 10px;

@@ -938,9 +938,9 @@ ul li ul li {
         <div class="showcaseform">
             <div class="formheader">
                 <h1>KONTAKT OS</h1>
-                <p>Kontakt os vedrørende spørgsmål 
-                    om produktet og interesse i en 
-                    demo af robotterne, <br> eller vores 
+                <p>Kontakt os vedrørende spørgsmål
+                    om produktet og interesse i en
+                    demo af robotterne, <br> eller vores
                     salgspartnere vedrørende i salg.
                 </p>
             </div>
@@ -1008,24 +1008,56 @@ ul li ul li {
     <!-- Buttons Section -->
     <section id="btns">
 
-        <div class="btns-head">
-            <h2>Knapper</h2>
-            <div class="btns-line"></div>
-        </div>
+      <div class="btns-head">
+          <h2>Knapper</h2>
+          <div class="btns-line">
+            <a href="https://www.universal-robots.com/products/collaborative-robots-cobots-benefits/" class="btns" onclick tabindex="0">
+              <p>LÆS MERE OM VORES ROBOTTER</p>
+            </a>
 
-        <div class="btns-img">
-            <img src="./img/ur-logo.png" alt="logo">
+            <a href="#" class="btns" onclick tabindex="0">
+              <p>FIND DIN ROBOT</p>
+            </a>
+
+          <a href="#" class="btns" onclick tabindex="0">
+            <p>LÆS MERE</p>
+          </a>
+
+          <a href="#" class="btns" onclick tabindex="0">
+            <p>Søg Robor</p>
+          </a>
         </div>
+      </div>
 
         <div class="btns-text">
-            <b>Anvendelse:</b> Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+            <b>Anvendelse:</b> Knapperne anvendes på alle siderne. De bruges til at føre brugeren hen til f.eks. "Find din robot"
+                Eller ud til de forskellige robotters sider.
         </div>
 
         <div class="code-box-btns1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
+&lt;div class="btns-head"&gt;
+  &lt;h2&gt;Knapper&lt;/h2&gt;
+    &lt;div class="btns-line"&gt;
+      &lt;a href="https://www.universal-robots.com/products/collaborative-robots-cobots-benefits/" class="btns" onclick tabindex="0"&gt;
+        &lt;p&gt;LÆS MERE OM VORES ROBOTTER&lt;/p&gt;
+      &lt;/a&gt;
 
+      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
+        &lt;p&gt;FIND DIN ROBOT&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
+        &lt;p&gt;LÆS MERE&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
+        &lt;p&gt;Søg Robor&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
                 </code>
             </pre>
         </div>
@@ -1034,7 +1066,89 @@ ul li ul li {
             <h1>Code Snippet (CSS):</h1>
             <pre>
                 <code class="code">
+.btns{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 19px 3px 19px;
+  min-width: 250px;
+  border: 0;
+  border-radius: 100px;
+  background-color:#56a0d3;
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  outline: 0;
+  transition: padding .2s;
+  top: 30px;
+}
 
+.btns:hover {
+  color: #fff;
+  padding: 4px 8px 15px 8px;
+}
+
+.btns:after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  background: transparent url(img/arrow.png) no-repeat right top;
+  background-size: auto 25px;
+  height: 25px;
+  transition: width .2s;
+}
+
+.btns:hover:after{
+  width:22px;
+}
+
+.btns1{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 4px 19px 3px 19px;
+  min-width: 250px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #2e7aaf;
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  outline: 0;
+  transition: padding .2s;
+  top: 30px;
+}
+
+.btns1:hover {
+  color: #fff;
+  padding: 4px 8px 15px 8px;
+}
+
+.btns1:after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+  background: transparent url(img/arrow.png) no-repeat right top;
+  background-size: auto 25px;
+  height: 25px;
+  transition: width .2s;
+}
+
+.btns1:hover:after{
+  width:22px;
+}
                 </code>
             </pre>
         </div>
