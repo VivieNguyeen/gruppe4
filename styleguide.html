@@ -101,10 +101,10 @@
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
-&lt;div class="logo"&gt; 
-    &lt;a href="#intro"&gt; 
-        &lt;img src="./img/ur-logo.png" alt="logo"&gt; 
-    &lt;/a&gt; 
+&lt;div class="logo"&gt;
+    &lt;a href="#intro"&gt;
+        &lt;img src="./img/ur-logo.png" alt="logo"&gt;
+    &lt;/a&gt;
 &lt;/div&gt;
                 </code>
             </pre>
@@ -169,7 +169,7 @@
                 </code>
             </pre>
         </div>
---> 
+-->
         <div class="code-box-typo2">
             <h1>Code Snippet (CSS):</h1>
             <pre>
@@ -327,18 +327,434 @@ p {
         </div>
 
         <div class="navi-img">
-            <img src="./img/ur-logo.png" alt="logo">
+            <img src="./img/nav.png" alt="logo">
         </div>
 
         <div class="navi-text">
-            <b>Anvendelse:</b> Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+            <b> Anvendelse:</b> Navigationsbaren kommer til at være øverst på alle siderne, da den skal hjælpe brugeren
+                med at navigere rundt. Navagationsbaren indeholder også en dropdown menu, for hver af de enkelte punkter
+                (Produkter, Indblik, Brancher, Anvendelse, Service og support, Kontakt os), som man også kan klikke ind på,
+                fra de forskellige undersider.
         </div>
 
         <div class="code-box-navi1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
+&lt;nav role="navigation"&gt;
+  &lt;ul&gt;
+  &lt;!-- Produkt navbar --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Produker&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+          &lt;div class="wrapper1"&gt;
+&lt;!-- Produkt venstre dropdown --&gt;
+  &lt;section class="wrapper1-item"&gt;
+    &lt;div class="link-label"&gt;PRODUKTER&lt;/div&gt;
+      &lt;div class="grid-gap1"&gt;
+        &lt;div class="help-width"&gt;
+          &lt;li&gt;&lt;a href="https://www.universal-robots.com/da/produkter/" class="tease-link"&gt;
+            &lt;h1&gt;Produktoversigt&lt;/h1&gt;
+            &lt;p&gt;Vores familie af kollaborative robotter tilbyder fire forskellige nyttelastmuligheder
+                      – 3, 5, 10 og 16 kg.
+                      – hvilket muliggør en lang række forskellige anvendelser.
+                      Og med seks frihedsgrader, utrolig fleksibilitet samt nem integration med eksisterende p
+                      roduktionsmiljøer er vores kollaborative robotter bygget til at håndtere alle udfordringer.&lt;/p&gt;
+          &lt;/a&gt;
 
+          &lt;a href="#" class="tease-link"&gt;
+            &lt;h1&gt;Find din robot&lt;/h1&gt;
+            &lt;p&gt;Vi skal bruge lidt info om dig, for at finde den bedst mulige robot, til dig.&lt;/p&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/section&gt;
+
+&lt;!-- Robot side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="link-label"&gt;&lt;br&gt;&lt;/div&gt;
+        &lt;a href="https://www.universal-robots.com/da/produkter/ur3-robot/" class="tease-link"&gt;
+          &lt;h1&gt;UR3 Robot&lt;/h1&gt;
+          &lt;p&gt;Vores lille kollaborative robot til placering på arbejdsborde&lt;/p&gt;
+        &lt;/a&gt;
+
+        &lt;a href="https://www.universal-robots.com/da/produkter/ur5-robot/" class="tease-link"&gt;
+          &lt;h1&gt;UR5 Robot&lt;/h1&gt;
+          &lt;p&gt;Den perfekte balance mellem størrelse og styrke&lt;/p&gt;
+        &lt;/a&gt;
+
+        &lt;a href="https://www.universal-robots.com/da/produkter/ur10-robot/" class="tease-link"&gt;
+          &lt;h1&gt;UR10 Robot&lt;/h1&gt;
+          &lt;p&gt;Gør kollaborativ automatisering tilgængeligt for din virksomhed&lt;/p&gt;
+        &lt;/a&gt;
+
+        &lt;a href="https://www.universal-robots.com/da/produkter/ur16e-robot/" class="tease-link"&gt;
+          &lt;h1&gt;UR16 Robot&lt;/h1&gt;
+          &lt;p&gt;Giver mulighed for montering af tungere værktøjer på enden af armen og meget mere&lt;/p&gt;
+        &lt;/a&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+
+&lt;div class="link-seperator"&gt;&lt;/div&gt;
+
+&lt;!-- UR+ højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="link-label"&gt;UR+&lt;/div&gt;
+        &lt;div class="grid-gap1"&gt;
+          &lt;div class="help-width"&gt;
+            &lt;a href="https://www.universal-robots.com/da/plus/" class="tease-link"&gt;
+              &lt;h1&gt;Oversigt over UR+&lt;/h1&gt;
+              &lt;p&gt;UR+ giver adgang til eksterne enheder og anvendelsessæt, der er designet til at styrke din produktion.&lt;/p&gt;
+            &lt;/a&gt;
+
+            &lt;a href="https://www.universal-robots.com/da/plus/urplus-application-kits/" class="tease-link"&gt;
+              &lt;h1&gt;UR+ anvendelsessæt&lt;/h1&gt;
+              &lt;p&gt; Gør implementeringen mere strømlinet ved at kombinere
+                        flere forskellige komponenter med software, der er designet på UR+-platformen.&lt;/p&gt;
+            &lt;/a&gt;
+
+            &lt;a href="https://www.universal-robots.com/da/plus/urplus-components/" class="tease-link"&gt;
+              &lt;h1&gt;UR+-komponenter&lt;/h1&gt;
+              &lt;p&gt;UR+-partnere innoverer og udvikler nye gribere, eksterne enheder og software for at spare dig tid.&lt;/p&gt;
+            &lt;/a&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/li&gt;
+&lt;!-- Indblik i navbar--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Indblik&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+          &lt;div class="wrapper1"&gt;
+
+&lt;!-- Indblik venstre dropdown --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/blog/" class="tease-link"&gt;
+        &lt;h1&gt;Blog&lt;/h1&gt;
+        &lt;p&gt;Læs mere om, hvordan kollaborative robotter hjælper med at overvinde automatiseringsbarrieren&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/cases/" class="tease-link"&gt;
+        &lt;h1&gt;Brugererfaring&lt;/h1&gt;
+        &lt;p&gt;Lær mere om historierne bag vores kunders succes.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;!-- Indblik side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://events.universal-robots.com/da" class="tease-link"&gt;
+        &lt;h1&gt;Begivenheder og webinarer&lt;/h1&gt;
+        &lt;p&gt;Tilmeld dig for at deltage i en af vores workshops, seminarer eller webinarer.&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/e-boeger/" class="tease-link"&gt;
+        &lt;h1&gt;E-bog-bibliotek&lt;/h1&gt;
+        &lt;p&gt; En række bøger, som hjælper dig med at komme i gang og få succes, hvis du vælger automatisering med kollaborative robotter.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;div class="link-seperator"&gt;&lt;/div&gt;
+
+&lt;!-- Indblik højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="grid-gap1"&gt;
+        &lt;div class="help-width"&gt;
+          &lt;a href="https://www.universal-robots.com/da/om-universal-robots/nyhedscenter/" class="tease-link"&gt;
+            &lt;h1&gt;Nyhedscenter&lt;/h1&gt;
+            &lt;p&gt;De seneste nyheder fra Universal Robots&lt;/p&gt;
+          &lt;/a&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;!-- Brancher i navbar--&gt;
+  &lt;li&gt;&lt;a href="https://www.universal-robots.com/da/brancher/"&gt;Brancher&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+            &lt;div class="wrapper1"&gt;
+
+&lt;!-- Brancher venstre dropdown --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/brancher/" class="tease-link"&gt;
+        &lt;h1&gt;Brancheoversigt&lt;/h1&gt;
+        &lt;p&gt; Universal Robots' kollaborative robotarme anvendes på daglig basis
+                  til at øge ydeevnen og tilføje værdi inden for et utal af forskellige brancher.
+                  Hvordan kan du bruge en kollaborativ robot til at automatisere din branche?&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;!-- Branche side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/brancher/bilindustrien-og-underleverand%C3%B8rer/" class="tease-link"&gt;
+        &lt;h1&gt;Bilindustrien og underleverandører&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/brancher/elektronik-og-teknologi/" class="tease-link"&gt;
+        &lt;h1&gt;Elektronik og teknologi&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/brancher/metal-og-forarbejdning/" class="tease-link"&gt;
+        &lt;h1&gt;Metal og forarbejdning&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/brancher/levnedsmiddelindustrien/" class="tease-link"&gt;
+        &lt;h1&gt;Fødevarer&lt;/h1&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;div class="link-seperator"&gt;&lt;/div&gt;
+
+&lt;!-- Brancher højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="grid-gap1"&gt;
+        &lt;div class="help-width"&gt;
+          &lt;a href="https://www.universal-robots.com/da/brancher/plast-og-polymerer/" class="tease-link"&gt;
+            &lt;h1&gt;Plast og polymerer&lt;/h1&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/brancher/medicin-og-kosmetik/" class="tease-link"&gt;
+            &lt;h1&gt;Medicin og kosmetik&lt;/h1&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/brancher/uddannelse-og-forskning/" class="tease-link"&gt;
+            &lt;h1&gt;Uddannelse og forskning&lt;/h1&gt;
+          &lt;/a&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;!-- Anvendelser i navbar--&gt;
+  &lt;li&gt;&lt;a href="https://www.universal-robots.com/da/applikationer/"&gt;Anvendelse&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+          &lt;div class="wrapper1"&gt;
+
+&lt;!-- Anvendelser venstre dropdown --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/applikationer/" class="tease-link"&gt;
+        &lt;h1&gt;Oversigt over anvendelser&lt;/h1&gt;
+        &lt;p&gt; Cobots fra Universal Robots tilbyder fleksibel automatisering
+        til producenter i alle størrelser. Vores familie af robotarme kan hjælpe
+        dig med at opnå større produktivitet og konkurrere på det globale marked –
+        uanset om de skal udføre samling, dosering, palletering, skrueopgaver eller
+        enhver anden opgave, du sætter dem til.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+&lt;/li&gt;
+
+&lt;!-- Anvendelser side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/applikationer/montering/" class="tease-link"&gt;
+        &lt;h1&gt;Montering&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/applikationer/dosering/" class="tease-link"&gt;
+        &lt;h1&gt;Dosering&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/brancher/metal-og-forarbejdning/" class="tease-link"&gt;
+        &lt;h1&gt;Metal og forarbejdning&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/applikationer/efterbehandling/" class="tease-link"&gt;
+        &lt;h1&gt;Efterbehandling&lt;/h1&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/applikationer/maskinpasning/" class="tease-link"&gt;
+        &lt;h1&gt;Maskinpasning&lt;/h1&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;div class="link-seperator"&gt;&lt;/div&gt;
+
+&lt;!-- Anvendelser højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="grid-gap1"&gt;
+        &lt;div class="help-width"&gt;
+          &lt;a href="universal-robots.com/da/applikationer/materialehaandtering/" class="tease-link"&gt;
+            &lt;h1&gt;Materialehåndtering&lt;/h1&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/applikationer/materialefjernelse/" class="tease-link"&gt;
+            &lt;h1&gt;Fjernelse af materiale&lt;/h1&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/applikationer/kvalitetskontrol/" class="tease-link"&gt;
+            &lt;h1&gt;kvalitetskontrol&lt;/h1&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/applikationer/svejsning/" class="tease-link"&gt;
+            &lt;h1&gt;Svejsning&lt;/h1&gt;
+          &lt;/a&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/div&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;!-- Service og support i navbar--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Service og support&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+          &lt;div class="wrapper1"&gt;
+
+&lt;!-- Service og support venstre dropdown --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/academy/" class="tease-link"&gt;
+        &lt;h1&gt;Academy&lt;/h1&gt;
+        &lt;p&gt;Vi har forbedret vores yderst populære Universal Robots Academy
+        med certificeret oplæring, der foregår online via vores Authorized Training Center Network.&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/produkter/leje-af-cobots-ur-financial-services/" class="tease-link"&gt;
+        &lt;h1&gt;Leasing&lt;/h1&gt;
+        &lt;p&gt; UR Financial Services forbedrer omkostningseffektiviteten ved at
+                  tilbyde en hurtig lavrisiko-løsning, der gør det lettere for producenter
+                  at implementere automatisering i deres virksomheder – uden at øge udgifterne.&lt;/p&gt;
+        &lt;/a&gt;
+      &lt;/section&gt;
+    &lt;/li&gt;
+
+&lt;!-- Service og support side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/support/" class="tease-link"&gt;
+        &lt;h1&gt;Tekninsk support&lt;/h1&gt;
+        &lt;p&gt; Få adgang til de nyeste funktioner og forbedringer! Se produktmeddelelser og
+                  download de seneste softwareopdateringer.&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/produkter/ur-service360/" class="tease-link"&gt;
+        &lt;h1&gt;Service 360&lt;/h1&gt;
+        &lt;p&gt;Vores forbedrede support sikrer ydeevnen, forøger oppetiden og reducerer omkostningerne.&lt;/p&gt;
+    &lt;/a&gt;
+  &lt;/section&gt;
+&lt;/li&gt;
+
+&lt;!-- Service og support højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/builder/" class="tease-link"&gt;
+        &lt;h1&gt;Application builder&lt;/h1&gt;
+          &lt;p&gt;Alt det du behøver for at komme i gang med at opbygge komplette applikationer med Universal Robots&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://universalrobotsonelogin.b2clogin.com/universalrobotsonelogin.onmicrosoft.com/b2c_1a_signupsignin/oauth2/v2.0/authorize?client_id=00448e25-1fc7-42b5-a390-7ce630d335a6&scope=openid%20profile&redirect_uri=https%3A%2F%2Fmyur.universal-robots.com%2F&client-request-id=cb58617a-3205-4386-99a2-00a729ebf978&response_mode=fragment&response_type=code&x-client-SKU=msal.js.browser&x-client-VER=2.4.1&x-client-OS=&x-client-CPU=&client_info=1&code_challenge=aX5EIEIFmhHxLs_vc9p18SgVVo5Ywl-m6UYrwHiRXo4&code_challenge_method=S256&nonce=60c6404f-f6f3-4fd3-acb6-713e4b7ab0a8&state=eyJpZCI6IjJmODA0OWEwLWFjZmEtNDJkOC05MzBkLTY4ZTllZjQ3N2Y3OCIsInRzIjoxNjE0MTc0Nzg1LCJtZXRhIjp7ImludGVyYWN0aW9uVHlwZSI6InJlZGlyZWN0In19" class="tease-link"&gt;
+        &lt;h1&gt;myUR&lt;/h1&gt;
+        &lt;p&gt;Administrer din UR cobot-flåde, og opbevar alle detaljer om dine cases på ét sted. Du kan tilmelde dig, hvis du har én eller flere cobots.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+
+&lt;!-- Kontakt os i navbar--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;Kontakt os&lt;/a&gt;
+    &lt;ul class="dropdown"&gt;
+      &lt;div class="Head-overlay"&gt;
+        &lt;div class="Head-overlay-content"&gt;
+          &lt;div class="wrapper1"&gt;
+
+&lt;!-- Kontakt os  venstre dropdown --&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/tal-med-en-ekspert//" class="tease-link"&gt;
+        &lt;h1&gt;Tal med en ekspert&lt;/h1&gt;
+        &lt;p&gt; En af vores eksperter vil hjælpe dig med at få overblik over, hvordan du
+                  kan forbedre driftseffektiviteten og få større produktionsresultater via automatisering
+                  med kollaborative robotter.&lt;/p&gt;
+      &lt;/a&gt;
+
+      &lt;a href="https://www.universal-robots.com/da/forhandlere/" class="tease-link"&gt;
+        &lt;h1&gt;Find en distributør&lt;/h1&gt;
+        &lt;p&gt; UR har et verdensomspændende distributør- og partnernetværk, som står klar til
+                  at hjælpe dig med alle dine udfordringer inden for automatisering.&lt;/p&gt;
+      &lt;/a&gt;
+    ´&lt;/section&gt;
+    &lt;/li&gt;
+
+&lt;!-- Kontakt os side midt dropdown--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;a href="https://www.universal-robots.com/da/bestil-en-demonstration/" class="tease-link"&gt;
+        &lt;h1&gt;Få en personlig demo&lt;/h1&gt;
+        &lt;p&gt;Vi skal bruge lidt mere information om dig og din virksomhed for at kunne forberede den bedst mulige demo for dig.&lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/section&gt;
+  &lt;/li&gt;
+
+&lt;div class="link-seperator"&gt;&lt;/div&gt;
+
+&lt;!-- Kontakt os højre side--&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;/a&gt;
+    &lt;section class="wrapper1-item"&gt;
+      &lt;div class="grid-gap1"&gt;
+        &lt;div class="help-width"&gt;
+          &lt;a href="https://jobs.teradyne.com/UR/" class="tease-link"&gt;
+            &lt;h1&gt;Karriere&lt;/h1&gt;
+            &lt;p&gt; Vi kommer fra hele verden, men vi forenes af ét fokus: løbende at udvide grænserne
+                      for vores egne ambitioner, virksomhedens mål, og hvad vi kan opnå med robotteknologi.
+                      Ansøg allerede i dag.&lt;/p&gt;
+          &lt;/a&gt;
+
+          &lt;a href="https://www.universal-robots.com/da/om-universal-robots/" class="tease-link"&gt;
+            &lt;h1&gt;Om Universal Robots&lt;/h1&gt;
+            &lt;p&gt;Arbejder for at gøre verden til et bedre sted – én cobot ad gangen.&lt;/p&gt;
+          &lt;/a&gt;
+        &lt;/section&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
                 </code>
             </pre>
         </div>
@@ -347,6 +763,149 @@ p {
             <h1>Code Snippet (CSS):</h1>
             <pre>
                 <code class="code">
+a {
+ text-decoration: none;
+)
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  color: black;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: Black;
+)
+
+li:hover,
+li:focus-within {
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+)
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 225px;
+}
+
+.head-overlay{
+  top: calc(100% - 12px);
+  left: 150px;
+  right: 0;
+  width: auto;
+  padding: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.Head-overlay-content{
+  box-shadow: 0 8px 24px rgb(0 0 0 / 13%);
+  transition-property: max-height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.wrapper1{
+  display: flex;
+  align-items: stretch;
+  padding: 36px 40px 30px 40px;
+  white-space: normal;
+  justify-content: start;
+  font-size: 12px;
+}
+
+.wrapper1-item *{
+  flex: 0 1 33.33%;
+}
+
+.link-label{
+  display: block;
+  margin-left: 27px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #b9b9b9;
+  text-transform: uppercase;
+}
+
+.grid-gap1{
+  margin-bottom: 10px;
+}
+
+.help-width{
+  width: 100%;
+}
+
+.tease-link{
+  display: block;
+  padding: 10px 24px;
+  white-space: normal;
+  font-family: Roboto,sans-serif,arial
+  background: 0 0;
+  border-left: 3px solid transparent;
+  box-shadow: 0 8px 24px transparent;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: border-color .2s,box-shadow .2s;
+)
+
+.tease-link h1{
+  font-weight: 500px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #303030;
+  transition: color .2s;
+}
+
+.tease-link p{
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #747474;
+}
+
+.link-seperator{
+  flex: 0 0 1px;
+  background-color: #ececec;
+  margin: 0 10px;
+}
 
                 </code>
             </pre>
