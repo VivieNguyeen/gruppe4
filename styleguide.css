@@ -282,7 +282,7 @@ nav {
   grid-column: 1/1;
   grid-row: 2/2;
   height: auto;
-  width: 80%;
+  width: 60%;
   position: relative;
   top: -200px;
 }
@@ -629,9 +629,9 @@ nav {
   grid-column: 1/1;
   grid-row: 2/2;
   height: auto;
-  width: 80%;
+  width: 100%;
   position: relative;
-  top: -70px;
+  top: -200px;
 }
 
 .navi-text {
@@ -639,7 +639,7 @@ nav {
   grid-row: 3/3;
   font-size: 14px;
   position: relative;
-  top: -120px;
+  top: -30px;
   background-color: #303030;
   color: #fff;
   border-radius: 10px;
