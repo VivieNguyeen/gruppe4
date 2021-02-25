@@ -975,7 +975,37 @@ ul li ul li {
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
+&lt;div class="showcaseform"&gt;
+    &lt;div class="formheader"&gt;
+        &lt;h1&gt;KONTAKT OS&lt;/h1&gt;
+        &lt;p&gt;Kontakt os vedrørende spørgsmål
+                    om produktet og interesse i en
+                    demo af robotterne, eller vores
+                    salgspartnere vedrørende i salg.
+        &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="forms-p1"&gt;
+        &lt;form&gt;
+            &lt;input placeholder="Fornavn" name="name" type="text"&gt;
+            &lt;input placeholder="Efternavn" name="email" type="text"&gt;
+            &lt;input placeholder="E-mail" name="subject" type="text"&gt;
+            &lt;input placeholder="Telefonnummer" name="subject" type="text"&gt;
+            &lt;input placeholder="Land" name="subject" type="text"&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
 
+    &lt;div class="forms-p2"&gt;
+        &lt;form&gt;
+
+            &lt;input placeholder="Distributør" name="subject" type="text"&gt;
+            &lt;textarea placeholder="Besked" name="message"&gt;&lt;/textarea&gt;
+
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div class="forms-btn"&gt;
+            &lt;button type="submit"&gt;SEND&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                 </code>
             </pre>
         </div>
@@ -984,21 +1014,118 @@ ul li ul li {
             <h1>Code Snippet (CSS):</h1>
             <pre>
                 <code class="code">
+.showcaseform {
+  height: 35vh;
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-gap: 5%;
+  position: relative;
+  top: -220px;
+}
 
+.formheader {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  height: 10vh;
+  width: 210%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.forms-p1 {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vw;
+  position: relative;
+  top: 65px;
+}
+
+.forms-p1 input {
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 13px;
+  width: 100%;
+  border: 1px solid #303030;
+}
+
+.forms-p2 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vw;
+  position: relative;
+  top: 65px;
+}
+
+.forms-p2 input {
+  margin-top: 20px;
+  padding: 7px;
+  border-radius: 13px;
+  width: 100%;
+  border: 1px solid #303030;
+}
+
+.forms-p2 textarea {
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 15px;
+  width: 100%;
+  height: 25vh;
+  border: 1px solid #303030;
+}
+
+.forms-btn {
+  grid-column: 1/2;
+  grid-row: 3/3;
+  height: 10vh;
+  width: 210%;
+  margin-top: 20px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.forms-btn button {
+  margin-top: 15px;
+  position: relative;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  background-color: #56a0d3;
+  color: #fff;
+  height: 5vh;
+  width: 150px;
+}
+
+    /* Responsiv max-w 815px */
+    @media only screen and (max-width: 815px) {
+      .formheader h1 {
+        font-size: 18px;
+      }
+
+      .formheader p {
+        font-size: 12px;
+      }
+    }
+    /* End of Responsiv max-w 815px */
                 </code>
             </pre>
         </div>
 
-<!--
         <div class="code-box-forms3">
-            <h1>Code Snippet (CSS):</h1>
+            <h1>Code Snippet (JS):</h1>
             <pre>
                 <code class="code">
 
                 </code>
             </pre>
         </div>
--->
 
     </section>
     <!-- End of Forms Section -->
