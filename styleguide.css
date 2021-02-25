@@ -717,50 +717,100 @@ nav {
 }
 
 .showcaseform {
-  grid-column: 1/1;
-  grid-row: 2/2;
-  height: auto;
-  width: 80%;
-  position: relative;
-  top: -70px;
-}
-
-.showcaseform div{
-  height: 20vh;
+  height: 35vh;
   width: 50vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
   position: relative;
   top: -180px;
 }
 
+.formheader {
+  grid-column: 1/2;
+  grid-row: 1/1;
+  height: 10vh;
+  width: 200%;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: pink;
+}
+
 .forms-p1 {
   grid-column: 1/1;
-  grid-row: 1/2;
-  height: auto;
-  width: 50%;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vw;
   position: relative;
-  top: -70px;
-  background-color: #56a0d3;
+  top: 100px;
+  background-color: rgb(196, 196, 196);
+}
+
+.forms-p1 input {
+  margin: 10px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+  border: transparent;
 }
 
 .forms-p2 {
   grid-column: 2/2;
-  grid-row: 1/2;
-  height: auto;
-  width: 50%;
+  grid-row: 2/2;
+  height: 35vh;
+  width: 100%;
+  max-width: 50vw;
   position: relative;
-  top: -70px;
-  background-color: teal;
+  top: 100px;
+  background-color: rgb(208, 208, 208);
 }
+
+.forms-p2 input, .forms-p2 textarea {
+  margin: 10px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+  border: transparent;
+  }
+
+.forms-btn {
+  grid-column: 1/2;
+  grid-row: 3/3;
+  height: 5vh;
+  width: 200%;
+  position: relative;
+  top: 140px;
+  background-color: rgb(193, 112, 112);
+}
+
+.forms-btn button {
+  margin-top: 10px;
+  position: relative;
+  left: 45%;
+}
+
+    /* Responsiv max-w 815px */
+    @media only screen and (max-width: 815px) {
+      .formheader h1 {
+        font-size: 18px;
+      }
+
+      .formheader p {
+        font-size: 12px;
+      }
+    }
+    /* End of Responsiv max-w 815px */
 
 .forms-text {
   grid-column: 1/1;
   grid-row: 3/3;
   font-size: 14px;
   position: relative;
-  top: -120px;
+  top: -0px;
   background-color: #303030;
   color: #fff;
   border-radius: 10px;
