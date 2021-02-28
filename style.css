@@ -393,11 +393,31 @@ footer {
   font-weight: 300;
   font-size: 12px;
   margin-right: 20px;
+  position: relative;
+  top: 0px;
 }
 
 .footer-text a {
   color: #56a0d3;
 }
+
+.footer-text pre {
+  font-family: Roboto, sans-serif, arial;
+}
+
+.footer-social {
+
+}
+
+.footer-social a {
+
+}
+
+.footer-social img {
+
+}
+
+
     /* Responsiv max-w 1180px */
     @media only screen and (max-width: 1180px) {
       .footer-column h4 {
