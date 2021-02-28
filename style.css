@@ -13,7 +13,6 @@
     scroll-behavior: smooth;
     font-style: normal;
     line-height: 1.65;
-    height: 300vh;
   }
   
   a {
@@ -47,7 +46,7 @@
     padding-inline-start: 40px;
   }
   
-  li {
+  nav li {
     color: black;
     display: block;
     float: left;
@@ -58,22 +57,22 @@
     font-size: 14px;
   }
   
-  li a {
+  nav li a {
     color: Black;
   }
   
-  li:hover,
-  li:focus-within {
+  nav li:hover,
+  nav li:focus-within {
     cursor: pointer;
     border-bottom: 2px solid #303030;
   }
   
-  li:focus-within a {
+  nav li:focus-within a {
     outline: none;
     border-bottom: 2px solid #303030;
   }
   
-  ul li ul {
+  nav ul li ul {
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
@@ -84,16 +83,16 @@
     display: none;
   }
   
-  ul li:hover > ul,
-  ul li:focus-within > ul,
-  ul li ul:hover,
-  ul li ul:focus {
+  nav ul li:hover > ul,
+  nav ul li:focus-within > ul,
+  nav ul li ul:hover,
+  nav ul li ul:focus {
      visibility: visible;
      opacity: 1;
      display: block;
   }
   
-  ul li ul li {
+  nav ul li ul li {
     clear: both;
     width: 225px;
   }
@@ -181,7 +180,7 @@
     margin: 0 10px;
   }
 
-    /* Responsiv max-w 1015px */
+    /* Responsiv max-w 1115px */
     @media only screen and (max-width: 1115px) {
         body {
         overflow-x: hidden;
@@ -286,16 +285,18 @@
         transform: rotate(45deg) translate(-5px, -6px);
         }
     }
-    /* End of Responsiv max-w 1015px */
+    /* End of Responsiv max-w 1115px */
   /* End of Nav Bar Section */
 
 /* Content Section */
 #sec1 {
   height: 50vh;
+  background-color: pink;
 }
 
 #sec2 {
   height: 50vh;
+  background-color: teal;
 }
 /* End of Content Section */
 
@@ -303,10 +304,11 @@
 footer {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 88vh;
   z-index: 10;
   position: relative;
   bottom: -1000px;
+  overflow: hidden;
 }
 
 .footer-container {
@@ -333,7 +335,7 @@ footer {
   width: 250px;
   padding-bottom: 5px;
   padding-top: 5px;
-  margin: 20px auto;
+  margin: 20px auto 0 200px;
 }
 
 .footer-lists {
@@ -341,10 +343,135 @@ footer {
   grid-row: 2/2;
   width: 120%;
   margin-left: auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 20% 60% 20%;
-  background-color: rgb(123, 68, 77);
 }
+
+.footer-column li {
+  list-style: none;
+}
+
+.footer-column {
+  color: #fff;
+  font-weight: 300;
+  margin-top: 6px;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.footer-column h4 {
+  font-family: "Roboto Condensed",sans-serif,arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  margin-left: 18%;
+}
+
+.footer-column a {
+  color: #fff;
+  text-align: left;
+}
+
+.footer-column li {
+  color: #fff;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.footer-text {
+  grid-column: 1/4;
+  grid-row: 3/3;
+  width: 100%;
+  margin-left: 10%;
+  display: inline-block;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.footer-text a {
+  color: #56a0d3;
+}
+    /* Responsiv max-w 1180px */
+    @media only screen and (max-width: 1180px) {
+      .footer-column h4 {
+        margin-left: 20%;
+      }
+    }
+    /* Responsiv max-w 988px */
+    @media only screen and (max-width: 988px) {
+      .footer-column h4 {
+        margin-left: 24%;
+      }
+
+      .footer-text {
+        width: 120%;
+      }
+    }
+    /* Responsiv max-w 800px */
+    @media only screen and (max-width: 800px) {
+      .footer-column h4 {
+        margin-left: 29%;
+      }
+    }
+    /* Responsiv max-w 745px */
+    @media only screen and (max-width: 745px) {
+      footer {
+        display: flex-end;
+        width: 100%;
+        height: 120vh;
+        z-index: 10;
+        position: relative;
+        bottom: -500px;
+      }
+      
+      .footer-container {
+        background: #303030 url(/img/ur_bg-big.png) no-repeat top center;
+      }
+
+      .footer-grid {
+        height: 50vh;
+        margin-top: 5vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15% 21.5% 21.5% 21.5% 20%;
+      }
+      
+      .footer-lists {
+        height: 150vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15% 21.5% 21.5% 21.5% 20%;
+        grid-gap: 120px;
+        width: 90%;
+        margin: 10vh auto;
+      }
+
+      .footer-column {
+        height: 20vh;
+        text-align: left;
+
+      }
+
+      .footer-column h4 {
+        margin-bottom: 12px;
+        margin-left: 30%;
+        width: 50%;
+      }
+
+      .footer-logo img {
+        margin: 20px auto;
+      }
+
+      .footer-text {
+        width: 50%;
+        position: relative;
+        top: -100px;
+      }
+    }
+
 /* End of Footer Section */
