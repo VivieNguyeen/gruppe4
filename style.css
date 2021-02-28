@@ -289,3 +289,62 @@
     /* End of Responsiv max-w 1015px */
   /* End of Nav Bar Section */
 
+/* Content Section */
+#sec1 {
+  height: 50vh;
+}
+
+#sec2 {
+  height: 50vh;
+}
+/* End of Content Section */
+
+/* Footer Section */
+footer {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  z-index: 10;
+  position: relative;
+  bottom: -1000px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 100%;
+  background: #303030 url(/img/ur_bg.png) no-repeat top center;
+}
+
+.footer-grid {
+  height: 80vh;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15% 65% 20%;
+}
+
+.footer-logo {
+  grid-column: 1/6;
+  grid-row: 1/1;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 250px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 20px auto;
+}
+
+.footer-lists {
+  grid-column: 1/6;
+  grid-row: 2/2;
+  width: 120%;
+  margin-left: auto;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20% 60% 20%;
+  background-color: rgb(123, 68, 77);
+}
+/* End of Footer Section */
