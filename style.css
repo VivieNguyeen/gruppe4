@@ -426,6 +426,7 @@ footer {
   opacity: .5;
 }
 
+
     /* Responsiv max-w 1180px */
     @media only screen and (max-width: 1180px) {
       .footer-column h4 {
