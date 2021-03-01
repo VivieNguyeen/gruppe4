@@ -26,7 +26,7 @@
     height: 12vh;
     width: 120%;
     display: grid;
-    grid-template-columns: 5% 90% 5%;
+    grid-template-columns: 5% 1% 89% 5%;
     grid-template-rows: 100%;
     z-index: 5;
     position: fixed;
@@ -48,18 +48,22 @@
   }
 
   .logo-line {
-    width: 10px;
+    width: 1px;
     height: 25px;
     background-color: #56a0d3;
     margin: 30px 10px 0 10px;
     transition: all 0.3s ease;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    position: relative;
+    left: 215px;
   }
 
   nav ul {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 250px;
+    margin-inline-start: 180px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
@@ -72,8 +76,8 @@
     position: relative;
     text-decoration: none;
     transition-duration: 0.5s;
-    font-size: 14px;
-    grid-column: 2/2;
+    font-size: 13px;
+    grid-column: 3/3;
     grid-row: 1/1;
   }
   
@@ -200,6 +204,24 @@
     margin: 0 10px;
   }
 
+  .header-icons {
+    display: block;
+    width: 100px;
+    z-index: 15;
+    position: relative;
+    top: -20px;
+    right: -325px;
+    
+  }
+  
+  .header-icons img {
+    width: 18px;
+    margin-left: 20px;
+  }
+
+  .header-icons a {
+    border-bottom: none;
+  }
   /* End of Nav Bar Section */
 
 /* Content Section */
