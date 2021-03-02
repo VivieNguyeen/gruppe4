@@ -42,7 +42,7 @@ nav {
   width: 20%;
   margin-bottom: 20px;
   margin-right: 10%;
-  background-color: beige;
+  margin-left: 65px;
 }
 
 .logo img {
@@ -66,7 +66,6 @@ nav {
   transition: all 0.3s ease;
   position: relative;
   left: 20px;
-  background-color: teal;
 }
 
 .nav-links {
@@ -75,8 +74,7 @@ nav {
   width: 600px;
   height: 80px;
   position: relative;
-  left: -250px;
-  background-color: pink;
+  left: -115px;
 }
 
 .nav-links li {
@@ -86,7 +84,6 @@ nav {
   font-size: 14px;
   position: relative;
   margin-top: 30px;
-
 }
 
 .nav-links li:hover {
@@ -99,10 +96,29 @@ nav {
   width: 5px;
 }
 
+.header-icons {
+  display: block;
+  width: 100px;
+  z-index: 15;
+  position: relative;
+  top: 0px;
+  right: 0%;
+  margin-left: 10%;
+}
+
+.header-icons img {
+  width: 18px;
+  margin-left: 20px;
+}
+
+.header-icons a {
+  border-bottom: none;
+}
+
 .burger {
   display: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .burger .line1,
@@ -116,8 +132,21 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Responsiv max-w 1015px */
-@media only screen and (max-width: 1115px) {
+/* Responsiv max-w 1215px */
+@media only screen and (max-width: 1215px) {
+  .logo {
+    width: 22%;
+  }
+
+  .nav-links {
+    position: relative;
+    left: -75px;
+  }
+}
+/* End of Responsiv max-w 1215px */
+
+/* Responsiv max-w 1080px */
+@media only screen and (max-width: 1080px) {
   body {
     overflow-x: hidden;
   }
@@ -165,6 +194,10 @@ nav {
     display: none;
   }
 
+  .header-icons {
+    display: none;
+  }
+
   .burger {
     display: block;
     margin-right: 0;
@@ -206,7 +239,7 @@ nav {
     color: #56a0d3;
     font-weight: 600;
     transition: all 0.3s ease;
-    top: 35px;
+    top: 30px;
   }
 
   .toggle .line1 {
@@ -221,7 +254,7 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
   }
 }
-/* End of Responsiv max-w 1015px */
+/* End of Responsiv max-w 1080px */
 /* End of Nav Bar Section */
 
 /* Content Section */
