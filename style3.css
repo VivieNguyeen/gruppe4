@@ -146,7 +146,7 @@ nav {
 /* End of Responsiv max-w 1215px */
 
 /* Responsiv max-w 1080px */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1115px) {
   body {
     overflow-x: hidden;
   }
