@@ -964,17 +964,19 @@ nav {
 
 .btns:hover {
     color: #fff;
-    padding: 4px 8px 15px 8px;
+    padding: 4px 8px 10px 8px;
 }
 
 .btns:after{
   content: "";
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   margin-top: 2px;
-  background: transparent url(img/arrow.png) no-repeat right top;
-  background-size: auto 25px;
-  height: 25px;
+  background: transparent url(/img/ur-icons/ylw-arrow.png) no-repeat right top;
+  background-size: auto 14px;
+  background-position-x: 180px;
+  background-position-y: -0px;
+  height: 11px;
   transition: width .2s;
   }
 
