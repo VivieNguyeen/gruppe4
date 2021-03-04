@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <script src="bar2.js" defer></script>
     <title>Universal Robots</title>
 </head>
 <body>
@@ -71,20 +72,317 @@
 <!-- COMPARE - Content Section -->
 <section id="compare">
   <div class="compare-robots">
+    
     <div class="compare-header">
       <h2>
         Find din robot
       </h2>
     </div>
+
+    <div class="compare-bar">
+        <img src="./img/compare-bar.png" alt="Compare">
+    </div>
+
+    <div class="compare-buttons">
+
+      <a href="https://www.universal-robots.com/da/produkter/ur3-robot/">
+        <button class="comp-btn1"><span> LÆS MERE </span></button>
+      </a>
+
+      <a href="https://www.universal-robots.com/da/produkter/ur5-robot/">
+        <button class="comp-btn2"><span> LÆS MERE </span></button>
+      </a>
+
+      <a href="https://www.universal-robots.com/da/produkter/ur10-robot/">
+        <button class="comp-btn3"><span> LÆS MERE </span></button>
+      </a>
+
+      <a href="https://www.universal-robots.com/da/produkter/ur16e-robot/">
+        <button class="comp-btn4"><span> LÆS MERE </span></button>
+      </a>
+
+    </div>
+
   </div>
 </section>
 <!-- End of COMPARE - Content Section -->
 
 
+<!-- SECTIONSPLIT - Content Section -->
+<section id="sectionsplit">
+  <div class="sectionsplit">
+    <img src="./img/sectionsplit.png" alt="sectionsplit">
+  </div>
+</section>
+<!-- End of SECTIONSPLIT - Content Section -->
 
 
 <!-- WIZARD - Content Section -->
 <section id="wizard">
+  <div class="wizard">
+    
+    <div class="wizard-header">
+      <h2>
+        Fortæl os om dine behov
+      </h2>
+    </div>
+
+    <div class="wizard-progress">
+
+        <div id="stepProgressBar">
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">Industri</p>
+          </div>
+  
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">Anvendelse</p>
+          </div>
+  
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">Payload</p>
+          </div>
+  
+          <div class="step">
+            <div class="bullet"></div>
+            <p class="step-text">Reach</p>
+          </div>
+  
+          <div class="step">
+            <div class="bullet-search"></div>
+            <p class="step-text">Søg</p>
+          </div>
+        </div>
+  
+        <div id="main">
+          <p id="content"></p>
+          <button class="btn" id="previousBtn" disabled>Prev</button>
+          <button class="btn" id="nextBtn">Next</button>
+          <button class="btn" id="finishBtn" disabled>Søg</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="wizard-radio1">
+
+            <h1>1.Vælg din industri</h1>
+
+  <form name="forms" onsubmit="return myfun()">
+
+    <div class="messages">
+      <p id="messages"></p>
+    </div>
+
+    <div id="industri-form" class="container">
+      <p id="industri-error"></p>
+
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="kosmetik">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Kosmetik</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="Bilindustri">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Bilindustri</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="3C">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">3C (Computer, kommunikation, forbrugerelektronik)</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="metal">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Metaller og bearbejdning</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="mad">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Mad og drikke</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="plastik">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Plastik og polymere</span>
+   </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="farmaceut">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Farmaceut og kemi</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="medicin">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Medicin og sundhedspleje</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="service">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Service</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio1" value="andet">
+        <span class="radio__control"></span>
+      </span>
+      <span class="radio__label">Andet(Konstruktion, rumfart, skibsbygning)</span>
+    </label>
+
+    </div>
+
+    </div>
+
+
+    <div class="wizard-radio2">
+
+      <h2>2. Hvor skal robotten anvendes?</h2>
+
+
+      <div class="messages2">
+        <p id="messages2"></p>
+      </div>
+
+    <div id="anvendes-form" class="container2">
+      <p id="anvendes-error"></p>
+
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="montering">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Montering</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="pakning">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Pakning</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="luft">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Luft blæser</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="polering">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Polering</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="placer">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Vælg og placer</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="limning">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Limning</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="maskinpleje">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Maskinepleje</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="inspektion">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Inspektion</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="binding">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Binding</span>
+    </label>
+
+    <label class="radio">
+      <span class="radio__input">
+        <input type="radio" name="radio2" value="andet">
+        <span class="radio__control2"></span>
+      </span>
+      <span class="radio__label">Andet</span>
+    </label>
+
+    </div>
+      <div class="btn">
+        <button type="button" name="button" id="btn" onclick="Validate()">SØG ROBOT</button>
+    </div>
+
+  </form>
+
+    </div>
+
+
+
+    
+
+    <div class="payload">
+
+    </div>
+
+    <div class="reach">
+
+    </div>
+
+
+  </div>
 
 </section>
 <!-- End of WIZARD - Content Section -->
