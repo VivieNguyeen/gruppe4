@@ -379,7 +379,6 @@ nav {
   position: absolute;
   margin-bottom: 480px;
   margin-left: 50px;
-  margin-top: -50px;
 }
 
 .breadcrumbs-item{
@@ -717,16 +716,6 @@ right: 0;
     border-radius: 5px;
   }
 
-  .bg-blur {
-    height: 100vh;
-    width: 100vw;
-    background: black;
-    opacity: .3;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   #popup.active{
     display: block;
   }
@@ -742,6 +731,7 @@ right: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
+    visibility: hidden;
   }
 
   #popup-besked{

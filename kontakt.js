@@ -1,6 +1,8 @@
 console.log("hej");
 const btn = document.getElementById('btn')
 const messageBox = document.getElementById("popup-besked");
+const checkImg = document.getElementById("checkImg");
+const okay = document.getElementById("okay");
 
 btn.addEventListener("click", function () {
     const fname = document.getElementById('fname');
@@ -61,11 +63,16 @@ btn.addEventListener("click", function () {
 
     else {
         messageBox.innerText = "Vi har modtaget din besked";
+        checkImg.style.visibility = "visible";
+        okay.style.visibility = "hidden";
     }
     //Det nummer her fortæller hvor lang delayen er i ms
 
     setTimeout(function () {
         window.location.reload();
     }, 2500)
-}
-)
+})
+
+okay.addEventListener("click", function(){
+    popup.classList.remove("active");
+})
