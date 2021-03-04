@@ -794,9 +794,9 @@ nav {
 .wizard-progress {
   grid-column: 1/1;
   grid-row: 1/6;
-  height: 130vh;
+  height: 140vh;
   position: relative;
-  top: 450px;
+  top: 250px;
   margin-left: 30%;
 }
 
@@ -1195,7 +1195,7 @@ footer {
   height: 88vh;
   z-index: 10;
   position: relative;
-  bottom: 0px;
+  bottom: -410px;
   overflow: hidden;
 }
 
