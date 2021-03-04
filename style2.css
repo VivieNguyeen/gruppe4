@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif !important;
   }
 
 *:before,
@@ -731,7 +732,7 @@ nav {
 /* WIZARD - Content Section */
 #wizard {
   height: 250vh;
-  background-color: lightgrey;
+  background-color: #fbfbfb;
 }
 
 .wizard {
@@ -749,7 +750,6 @@ nav {
   height: 10vh;
   position: relative;
   top: 100px;
-  background-color: pink;
 }
 
 .wizard-progress {
@@ -758,7 +758,6 @@ nav {
   height: 130vh;
   position: relative;
   top: 450px;
-  background-color: teal;
   margin-left: 30%;
 }
 
@@ -809,10 +808,12 @@ nav {
     .step-text{
       display: inline-block;
       margin-bottom: 10px;
-      margin-top: 57px;
+      margin-top: 50px;
       position: absolute;
       color: black;
       text-align: left;
+      font-size: 18px;
+      margin-left: -25px;
     }
 
     .bullet{
@@ -866,24 +867,28 @@ nav {
       bottom:10px;
     }
 
+    .half-col {
+      width: 100%;
+      float: left;
+    }
+
 .wizard-radio1 {
   grid-column: 2/3;
   grid-row: 2/2;
-  height: 50vh;
   width: 700px;
   position: relative;
   left: 35%;
   top: -770px;
   font-family: Roboto, sans-serif, arial;
-  background-color: lightgoldenrodyellow;
 }
 
     .container{
-      width: 45%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 10px;
-      margin-left: 50px;
+      position: relative;
+      top: -60px;
+      font-family: Roboto, sans-serif, arial;
     }
 
     .radio {
@@ -905,10 +910,9 @@ nav {
     }
 
       p{
-      font-family: roboto;
+      font-family: "roboto";
       color: red;
       font-size: 12px;
-      position: absolute;
       margin-top: -10px;
       margin-left: 50px;
     }
@@ -947,16 +951,13 @@ nav {
 .wizard-radio2 {
   grid-column: 2/3;
   grid-row: 3/3;
-  height: 50vh;
   width: 700px;
   position: relative;
   left: 35%;
   top: -670px;
-  background-color: lightskyblue;
 }
 
     .container2{
-      width: 45%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       grid-gap: 10px;
@@ -995,20 +996,12 @@ nav {
     }
 
 .payload {
-  grid-column: 2/3;
-  grid-row: 4/4;
   height: 50vh;
-  width: 700px;
+  width: 300px;
   position: relative;
   left: 35%;
   top: -600px;
 }
-
-    .slidercontainer {
-      width: 300px;
-      margin-top: 50px;
-      margin-bottom: 100px;
-    }
 
     .slider {
       -webkit-appearance: none;
@@ -1030,20 +1023,49 @@ nav {
     }
 
 .reach {
-  grid-column: 2/3;
-  grid-row: 5/5;
   height: 50vh;
-  width: 700px;
+  width: 300px;
   position: relative;
   left: 62%;
   top: -1010px;
 }
 
+
+#industri-error, #anvendes-error {
+  height: auto;
+  position: absolute;
+}
+
     .slidercontainer {
+      position: relative;
       width: 300px;
       margin-top: 50px;
       margin-bottom: 100px;
     }
+
+    .slidercontainer p {
+      margin-left: 0;
+      float: left;
+      color: black;
+      margin-bottom: 10px;
+    }
+
+    .slidercontainer p span {
+      float: right;
+      position: absolute;
+      right: 0;
+      top: -11px;
+    }
+
+    #payloadkg, #reachmm {
+      margin-top: 5px;
+    }
+
+    #industri-form {
+      padding-bottom: 0;
+    }
+
+
 
     .slider {
       -webkit-appearance: none;
@@ -1063,6 +1085,66 @@ nav {
       background: #56A0D3;
       cursor: pointer;
     }
+
+    .comp-btn1.search {
+      left: 0;
+      top: 0;
+    }
+
+#btn {
+  grid-column: 2/3;
+  grid-row: 6/6;
+  position: relative;
+  display: inline-block;
+  margin: 5px auto;
+  padding: 10px;
+  min-width: 250px;
+  border: 0;
+  border-radius: 20px;
+  background-color:#56a0d3;
+  cursor: pointer;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500px;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  outline: 0;
+  transition: padding .2s;
+  top: 30px;
+  width: 123px;
+  height: 30px;
+  cursor: pointer;
+}
+
+button {
+  text-transform: uppercase;
+}
+
+  #btn span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+  }
+
+  #btn span:after {
+    content: url(img/ylw-arrow.png);
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  #btn:hover span {
+    padding-right: 30px;
+  }
+
+  #btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 /* End of WIZARD - Content Section */
 
 

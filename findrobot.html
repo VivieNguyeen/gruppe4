@@ -182,6 +182,7 @@
       <p id="industri-error"></p>
 
 
+      <div class="half-col">
     <label class="radio">
       <span class="radio__input">
         <input type="radio" name="radio1" value="kosmetik">
@@ -221,7 +222,10 @@
       </span>
       <span class="radio__label">Mad og drikke</span>
     </label>
+  </div>
 
+
+  <div class="half-col">
     <label class="radio">
       <span class="radio__input">
         <input type="radio" name="radio1" value="plastik">
@@ -262,6 +266,8 @@
       <span class="radio__label">Andet(Konstruktion, rumfart, skibsbygning)</span>
     </label>
 
+  </div>
+
     </div>
 
     </div>
@@ -279,7 +285,7 @@
     <div id="anvendes-form" class="container2">
       <p id="anvendes-error"></p>
 
-
+<div class="half-col">
     <label class="radio">
       <span class="radio__input">
         <input type="radio" name="radio2" value="montering">
@@ -319,7 +325,9 @@
       </span>
       <span class="radio__label">Vælg og placer</span>
     </label>
+  </div>
 
+  <div class="half-col">
     <label class="radio">
       <span class="radio__input">
         <input type="radio" name="radio2" value="limning">
@@ -359,11 +367,10 @@
       </span>
       <span class="radio__label">Andet</span>
     </label>
+  </div>
 
     </div>
-      <div class="btn">
-        <button type="button" name="button" id="btn" onclick="Validate()">SØG ROBOT</button>
-    </div>
+      
 
   </form>
 
@@ -374,12 +381,46 @@
     
 
     <div class="payload">
+      <h1>3. Payload </h1>
+      <div class="slidercontainer">
+        <p style="text-align:left;"> 3kg / 6.6lbs <span> 16kg / 35.3lbs </span> </p>
+        <input type="range" min="3" max="16" value="3" id="payload" class="slider">
+        <p id="payloadkg"> kg </p>
+      </div>
+  
+      <script>
+      var slider = document.getElementById("payload");
+      var output = document.getElementById("payloadkg");
+      output.innerHTML = slider.value + " kg";
+  
+      slider.oninput = function() {
+        output.innerHTML = this.value + " kg";
+      }
+      </script>
 
+<button class="comp-btn1 search"><span>Søg Robot</span></button>
     </div>
 
     <div class="reach">
-
+      <h1>4. Reach </h1>
+      <div class="slidercontainer">
+        <p style="text-align:left;"> 500mm / 19.7ins <span> 1300mm / 51.2ins </span> </p>
+        <input type="range" min="500" max="1300" value="500" id="reach" class="slider">
+        <p id="reachmm"> mm </p>
+      </div>
+  
+      <script>
+      var slider = document.getElementById("reach");
+      var output1 = document.getElementById("reachmm");
+      output1.innerHTML = slider.value + " mm";
+  
+      slider.oninput = function() {
+        output1.innerHTML = this.value + " mm";
+      }
+      </script>
     </div>
+
+    
 
 
   </div>

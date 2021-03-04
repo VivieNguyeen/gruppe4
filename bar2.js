@@ -5,6 +5,8 @@ const finishBtn = document.getElementById('finishBtn');
 const content = document.getElementById('content');
 const bullets = [...document.querySelectorAll('.bullet')];
 
+var industriInputs = document.querySelectorAll("#industri-form label")
+
 const MAX_STEPS = 5;
 let currentStep = 1;
 
@@ -17,7 +19,7 @@ nextBtn.addEventListener('click', () =>{
     nextBtn.disabled = true;
     finishBtn.disabled = false;
   }
-})
+});
 
 previousBtn.addEventListener('click', () =>{
   const previousBullet = bullets[currentStep - 2];
@@ -33,3 +35,18 @@ previousBtn.addEventListener('click', () =>{
 finishBtn.addEventListener('click', () =>{
   location.reload();
 })
+
+
+
+function addStep() {
+
+}
+
+
+for (i = 0; i < industriInputs.length; i++) {
+  industriInputs[i].addEventListener('click', function() {
+    console.log("tissekonelim");
+  })
+}
+
+
