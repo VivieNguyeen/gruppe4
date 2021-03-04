@@ -757,6 +757,8 @@ nav {
 
 .sectionsplit {
   text-align: center;
+  position: relative;
+  top: -20px;
 }
 
 .sectionsplit img {
@@ -768,7 +770,7 @@ nav {
 
 /* WIZARD - Content Section */
 #wizard {
-  height: 250vh;
+  height: 140vh;
   background-color: #fbfbfb;
 }
 
