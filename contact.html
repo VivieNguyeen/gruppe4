@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
     <title>Universal Robots</title>
+
 </head>
 <body>
 <!-- Nav Section -->
@@ -66,15 +67,139 @@
 
 
 <!-- Content Section -->
-<section id="sec1"></section>
-<section id="sec2"></section>
+<section id="sec1" class="grid">
+
+<!-- breadcrumbs del -->
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs-item">
+      <a href="https://www.universal-robots.com/products/" class="breadcrumbs_link">Produkter</a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a href="#" class="breadcrumbs_link">Find din robot</a>
+    </li>
+    <li class="breadcrumbs-item">
+      <a href="#" class="breadcrumbs_link breadcrumbs_link-active">Vælg din nye robot</a>
+    </li>
+  </ul>
+  <!-- breadcrumbs del slut -->
+
+  <div class="newrobotimg">
+      <img src="./img/robotarm1.jpg" alt="robotarm">
+    </div>
+
+    <div class="info">
+      <div class="infoheader">
+        <h1>UR5e</h1>
+      </div>
+
+      <div class="infotekst">
+        <p>Som det seneste produkt i vores serie af kollaborative robotter tilbyder UR5e fremtidssikring med kollaborative innovationer, en brugeroplevelse, der sætter mennesket i centrum, og et økosystem til enhver applikation. Gør ambitioner til resultater ved at ændre måden tingene gøres på, med den mest fleksible automatiseringsplatform. UR5e tilbydes også som <a href="#">OEM robotsystem</a> og med <a href="#">en programmeringsenhed med 3 positioner.</a></p>
+      </div>
+
+      <div class="infoicons">
+        <img src="./img/infoicons.jpg" alt="infoicons">
+      </div>
+
+      <div class="infobutton">
+        <button class="button"><span> LÆS MERE </span></button>
+      </div>
+
+    </div>
+
+  <div class="newrobot"></div>
+
+  <div class="opdelt">
+    <img src="./img/opdelt.jpg" alt="opdeling">
+  </div>
+
+</section>
+
+<!-- section 2 start -->
+
+<section id="sec2">
+
+<div class="ekstraimg">
+    <img src="./img/ekstra.jpg" alt="robotarm">
+  </div>
+
+
+
+  <div class="ekstragrid">
+
+      <div class="ekstraheader">
+        <h1>TILBEHØR</h1>
+      </div>
+
+      <div class="ekstratekst">
+        <p>TeleRobotics EXtender (TREX) is a force-feedback teleoperation application. It provides an innovative solution for all cases where people work in hazardous, arduous or otherwise constrained environments, allowing them to perform their tasks without exposing themselves to any risk. With TREX, the operator takes control of the remote UR e-series robot through the Haption arm. The UR robot reproduces faithfully the movements of the master arm, in real-time.</p>
+      </div>
+
+      <div class="ekstrabutton">
+        <button class="button"><span> LÆS MERE </span></button>
+      </div>
+  </div>
+
+<div class="newrobot"></div>
+
+  <div class="opdelt">
+    <img src="./img/opdelt.jpg" alt="opdeling">
+  </div>
+
+  </section>
+
+<!-- section 3 start -->
+
+<section id="sec3">
+
+  <div class="showcaseform">
+      <div class="formheader">
+          <h1>KONTAKT OS</h1>
+          <p>Kontakt os vedrørende spørgsmål
+                      om produktet og interesse i en
+                      demo af robotterne, eller vores
+                      salgspartnere vedrørende i salg.
+          </p>
+      </div>
+      <div class="forms-p1">
+          <form>
+              <input placeholder="Fornavn" name="name" type="text" id="fname">
+              <input placeholder="Efternavn" name="email" type="text" id="lname">
+              <input placeholder="E-mail" name="subject" type="text" id="email">
+              <input placeholder="Telefonnummer" name="subject" type="text" id="number">
+              <input placeholder="Land" name="subject" type="text" id="contry">
+          </form>
+      </div>
+
+      <div class="forms-p2">
+          <form>
+              <input placeholder="Distributør" name="subject" type="text" id="distri">
+              <textarea placeholder="Besked" name="message" id="message"></textarea>
+          </form>
+      </div>
+
+      <div class="forms-btn">
+          <button type="submit" id="btn" onclick="popUpBox()">SEND</button>
+
+      </div>
+
+  </div>
+
+  <label id="result"></label>
+
+
+</section>
+<div id="popup">
+  <img src="./img/check.png" alt="check" style="width:50px;height:50px;">
+  <p id="popup-besked"></p>
+</div>
+
 <!-- End of Content Section -->
 
 <!-- Footer Section -->
   <footer>
     <div class="footer-container">
       <div class="footer-grid">
-        
+
         <div class="footer-logo">
             <img src="./img/ur-logo-white.png" alt="logo">
         </div>
@@ -125,7 +250,7 @@
               </li>
             </ul>
           </div>
-      
+
           <div class="footer-column">
             <h4 class="footer-column-title">SUPPORT</h4>
             <ul>
@@ -243,4 +368,5 @@
 <!-- End of Footer Section -->
 
 </body>
+<script src="kontakt.js" async></script>
 </html>

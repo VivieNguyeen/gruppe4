@@ -10,6 +10,8 @@ var industriInputs = document.querySelectorAll("#industri-form label")
 const MAX_STEPS = 5;
 let currentStep = 1;
 
+
+
 nextBtn.addEventListener('click', () =>{
   const currentBullet = bullets[currentStep -1]
   currentBullet.classList.add('completed');
@@ -35,18 +37,3 @@ previousBtn.addEventListener('click', () =>{
 finishBtn.addEventListener('click', () =>{
   location.reload();
 })
-
-
-
-function addStep() {
-
-}
-
-
-for (i = 0; i < industriInputs.length; i++) {
-  industriInputs[i].addEventListener('click', function() {
-    console.log("tissekonelim");
-  })
-}
-
-

@@ -278,6 +278,43 @@ nav {
 /* End of Nav Bar Section */
 
 
+/* Breadcrumps */
+
+.breadcrumbs{
+  padding: 10px;
+  font-family: roboto;
+  position: absolute;
+  margin-bottom: 480px;
+  margin-left: 50px;
+  z-index: 15;
+  margin-top: 100px;
+}
+
+.breadcrumbs-item{
+  display: inline-block;
+  font-size: 12px;
+}
+
+.breadcrumbs-item:not(:last-of-type)::after{
+  content: '\203a';
+  margin:  5px;
+  color: #cccccc;
+}
+
+.breadcrumbs_link{
+  text-decoration: none;
+  color: #999999;
+}
+
+.breadcrumbs_link:hover{
+  text-decoration: underline;
+}
+
+.breadcrumbs_link-active{
+  color: #56A0D3;
+  font-weight: 500;
+}
+/* End of Breadcrumps */
 
 
 /* COMPARE - Content Section */
@@ -1245,6 +1282,7 @@ footer {
   margin-right: 20px;
   position: relative;
   top: 0px;
+  line-height: 28px;
 }
 
 .footer-text a {
@@ -1355,6 +1393,7 @@ footer {
         width: 50%;
         position: relative;
         top: -100px;
+        line-height: 5px;
       }
     }
 
