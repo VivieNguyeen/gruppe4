@@ -550,6 +550,47 @@ nav {
               left: 525px;
             }
           }
+          .comp-btn1-search{
+            grid-column: 1/1;
+            grid-row: 3/3;
+            border-radius: 25px;
+            background-color: #56a0d3;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Roboto', sans-serif;
+            padding: 10px;
+            width: 200px;
+            height: 7vh;
+            cursor: pointer;
+            margin: 5px auto;
+            position: relative;
+            top: 0px;
+            left: 80px;  
+          }
+          
+            .comp-btn1-search span {
+              cursor: pointer;
+              position: relative;
+              transition: 0.2s;
+            }
+          
+            .comp-btn1-search span:after {
+              content: url(img/ylw-arrow.png);
+              position: absolute;
+              opacity: 0;
+              transition: 0.2s;
+            }
+          
+            .comp-btn1-search:hover span {
+              padding-right: 30px;
+            }
+          
+            .comp-btn1-search:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
 
           @media only screen and (max-width: 1390px) {
             .comp-btn1 {
@@ -770,8 +811,7 @@ nav {
 
 /* WIZARD - Content Section */
 #wizard {
-  height: 140vh;
-  background-color: #fbfbfb;
+  height: 130vh;
 }
 
 .wizard {
@@ -809,12 +849,12 @@ nav {
       margin-left: 15px;
       position: relative;
       padding: 10px;
-      border-radius: 15px;
+      border-radius: 20px;
       border: none;
       background-color: #56a0d3;
       color: #fff;
       height: 5vh;
-      width: 200px;
+      width: 80px;
     }
 
     .btn:hover{
@@ -1066,7 +1106,7 @@ nav {
   width: 300px;
   position: relative;
   left: 62%;
-  top: -1010px;
+  top: -948px;
 }
 
 
