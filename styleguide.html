@@ -1,4 +1,4 @@
-<html lang="en">
+&lt;&lt;&lt;&lt;<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -968,7 +968,11 @@ ul li ul li {
         </div>
 
         <div class="forms-text">
-            <b>Anvendelse:</b> Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+            <b>Anvendelse:</b> 'Kontakt os' er en kontaktformular, der kommer til at være på 'Vælg din nye robot' siden.
+                                Kontaktformularen er med til at færdiggøre oplevelsen for brugeren på hjemmesiden, da den skaber kontakt
+                                til UR eller deres salgspartnere. Den har en popupbox der fortæller en, hvis man har glemt at udfylde noget
+                                og så har den en popupbox, når man har sendt en mail, der fortæller at beskeden er modtaget. Denne popUpBox
+                                er lavet ved hjælp af JavaScript.
         </div>
 
         <div class="code-box-forms1">
@@ -1122,6 +1126,70 @@ ul li ul li {
             <h1>Code Snippet (JS):</h1>
             <pre>
                 <code class="code">
+console.log("");
+const btn = document.getElementById('btn')
+/*
+function refresh(){
+  window.parent.location = window.parent.location.href;
+}*/
+
+btn.addEventListener("click", function () {
+const fname = document.getElementById('fname');
+const lname = document.getElementById('lname');
+const email = document.getElementById('email');
+const contry = document.getElementById('contry');
+const distri = document.getElementById('distri');
+const message = document.getElementById('message');
+
+
+if (fname.value == "") {
+  window.alert("Indtast fornavn.");
+  fname.focus();
+  return false;
+}
+
+if (lname.value == "") {
+  window.alert("Indtast efternavn.");
+  lname.focus();
+  return false;
+}
+
+if (email.value == "") {
+  window.alert("Indtast email.");
+  email.focus();
+  return false;
+}
+
+if (number.value == "") {
+  window.alert("Indtast telefonnummer.");
+  phone.focus();
+  return false;
+}
+
+if (contry.value == "") {
+  window.alert("Indtast hvilket land.");
+  phone.focus();
+  return false;
+}
+
+if (distri.value == "") {
+  window.alert("Indtast hvilken distributør");
+  phone.focus();
+  return false;
+}
+
+if (message.value == "") {
+  window.alert("Indtast besked");
+  phone.focus();
+  return false;
+}
+return true;
+});
+
+var popup = document.getElementById("popup");
+function popUpBox() {
+    popup.classList.add("active");
+}
 
                 </code>
             </pre>
@@ -1139,21 +1207,11 @@ ul li ul li {
           <h2>Knapper</h2>
           <div class="btns-line">
             <div class="btns-showcase">
-                <a href="https://www.universal-robots.com/products/collaborative-robots-cobots-benefits/" class="btns" onclick tabindex="0">
-                <p>LÆS MERE OM VORES ROBOTTER</p>
-                </a>
-
-                <a href="#" class="btns" onclick tabindex="0">
-                <p>FIND DIN ROBOT</p>
-                </a>
-
-                <a href="#" class="btns" onclick tabindex="0">
-                <p>LÆS MERE</p>
-                </a>
-
-                <a href="#" class="btns" onclick tabindex="0">
-                <p>SØG ROBOT</p>
-                </a>
+                <button class="button"><span> LÆS MERE </span></button>
+                <button class="button"><span> SEND </span></button>
+                <button class="button"><span> SØG ROBOT </span></button>
+                <button class="button"><span> SE CASE </span></button>
+                <button class="button"><span> FIND DIN ROBOT </span></button>
             </div>
         </div>
       </div>
@@ -1167,26 +1225,21 @@ ul li ul li {
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
+
 &lt;div class="btns-head"&gt;
-  &lt;h2&gt;Knapper&lt;/h2&gt;
+  &lt;h2&gt;Knapper</h2&gt;
     &lt;div class="btns-line"&gt;
-      &lt;a href="https://www.universal-robots.com/products/collaborative-robots-cobots-benefits/" class="btns" onclick tabindex="0"&gt;
-        &lt;p&gt;LÆS MERE OM VORES ROBOTTER&lt;/p&gt;
-      &lt;/a&gt;
-
-      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
-        &lt;p&gt;FIND DIN ROBOT&lt;/p&gt;
-      &lt;/a&gt;
-
-      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
-        &lt;p&gt;LÆS MERE&lt;/p&gt;
-      &lt;/a&gt;
-
-      &lt;a href="#" class="btns" onclick tabindex="0"&gt;
-        &lt;p&gt;Søg Robor&lt;/p&gt;
-      &lt;/a&gt;
+      &lt;div class="btns-showcase"&gt;
+        &lt;button class="button"&gt;&lt;span&gt; LÆS MERE &lt;/span&gt;&lt;/button&gt;
+        &lt;button class="button"&gt;&lt;span&gt; SEND &lt;/span&gt;&lt;/button&gt;
+        &lt;button class="button"&gt;&lt;span&gt; SØG ROBOT &lt;/span&gt;&lt;/button&gt;
+        &lt;button class="button"&gt;&lt;span&gt; SE CASE &lt;/span&gt;&lt;/button&gt;
+        &lt;button class="button"&gt;&lt;span&gt; FIND DIN ROBOT &lt;/span&gt;&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+
+
                 </code>
             </pre>
         </div>
@@ -1195,6 +1248,29 @@ ul li ul li {
             <h1>Code Snippet (CSS):</h1>
             <pre>
                 <code class="code">
+#btns {
+  height: 100vh;
+  margin-top: -10vh;
+  margin-left: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.btns-head {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.btns-line {
+  width: 100px;
+  height: 3px;
+  background-color: #303030;
+  margin: 0;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
 .btns{
   position: relative;
   display: inline-block;
@@ -1217,66 +1293,55 @@ ul li ul li {
   top: 30px;
 }
 
-.btns:hover {
-  color: #fff;
-  padding: 4px 8px 15px 8px;
-}
-
-.btns:after{
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 2px;
-  background: transparent url(img/arrow.png) no-repeat right top;
-  background-size: auto 25px;
-  height: 25px;
-  transition: width .2s;
-}
-
-.btns:hover:after{
-  width:22px;
-}
-
-.btns1{
+.btns-showcase {
+  grid-column: 1/1;
+  grid-row: 2/2;
   position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 4px 19px 3px 19px;
-  min-width: 250px;
-  border: 0;
-  border-radius: 100px;
-  background-color: #2e7aaf;
-  cursor: pointer;
-  font-size: 12px;
-  color: #fff;
-  font-weight: 500px;
+  margin: 0 auto;
+  width: 45vw;
+  height: 30vh;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 30px;
-  outline: 0;
-  transition: padding .2s;
-  top: 30px;
+  top: 40px;
 }
 
-.btns1:hover {
-  color: #fff;
-  padding: 4px 8px 15px 8px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.button {
+  border-radius: 20px;
+  background-color: #56a0d3;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  width: 210px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.btns1:after{
-  content: "";
+.button span {
+  cursor: pointer;
   display: inline-block;
-  vertical-align: middle;
-  margin-top: 2px;
-  background: transparent url(img/arrow.png) no-repeat right top;
-  background-size: auto 25px;
-  height: 25px;
-  transition: width .2s;
+  position: relative;
+  transition: 0.2s;
 }
 
-.btns1:hover:after{
-  width:22px;
+.button span:after {
+  content: url(ylw-arrow.png);
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.button:hover span {
+  padding-right: 45px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
                 </code>
             </pre>
@@ -1307,17 +1372,41 @@ ul li ul li {
         </div>
 
         <div class="icons-img">
-            <img src="./img/ur-logo.png" alt="logo">
+            <img src="./img/ur-icons/lin-grey.png" alt="logo">
+            <img src="./img/ur-icons/yt-grey.png" alt="logo">
+            <img src="./img/ur-icons/tw-grey.png" alt="logo">
+            <img src="./img/ur-icons/fb-grey.png" alt="logo">
+            <img src="./img/ur-icons/ig-grey.png" alt="logo">
+            <img src="./img/ur-icons/pod-grey.png" alt="logo">
+            <img src="./img/ur-icons/rss-grey.png" alt="logo">
+            <img src="./img/ur-icons/search.png" alt="logo" id="icons-img1">
+            <img src="./img/ur-icons/globe.png" alt="logo">
         </div>
 
         <div class="icons-text">
-            <b>Anvendelse:</b> Logo skal bruges på samtlige sider til venstre i navigationsbaren.
+            <b>Anvendelse:</b> Ikonerne er på alle sider i footeren og oppe i menuen.
+                              Ikonerne hjælper brugeren med at finde det de leder efter,
+                              f.eks. med søgeknappen, og hjemmesidens forskellige sociale
+                              medier.
+
         </div>
 
         <div class="code-box-icons1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
+
+&lt;div class="icons-img"&gt;
+  &lt;img src="./img/ur-icons/lin-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/yt-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/tw-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/fb-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/ig-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/pod-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/rss-grey.png" alt="logo"&gt;
+  &lt;img src="./img/ur-icons/search.png" alt="logo" id="icons-img1"&gt;
+  &lt;img src="./img/ur-icons/globe.png" alt="logo"&gt;
+&lt;/div&gt;
 
                 </code>
             </pre>
@@ -1327,7 +1416,62 @@ ul li ul li {
             <h1>Code Snippet (CSS):</h1>
             <pre>
                 <code class="code">
+#icons {
+  height: 110vh;
+  margin-top: 5vh;
+  margin-left: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+}
 
+.icons-head {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+
+.icons-head h2{
+  font-family: roboto;
+}
+
+.icons-line {
+  width: 75px;
+  height: 3px;
+  background-color: #303030;
+  margin: 0;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.icons-img img {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  height: auto;
+  width: 10%;
+  position: relative;
+  top: -150px;
+  margin-left: 10px;
+}
+
+#icons-img1{
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.icons-text {
+  grid-column: 1/1;
+  grid-row: 3/3;
+  font-size: 14px;
+  position: relative;
+  top: -120px;
+  background-color: #303030;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 120px;
+  max-width: 400px;
+  margin: 0 auto;
+}
                 </code>
             </pre>
         </div>
