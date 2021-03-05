@@ -981,13 +981,12 @@ margin: 5px;
 
 .button span {
 cursor: pointer;
-display: inline-block;
 position: relative;
 transition: 0.2s;
 }
 
 .button span:after {
-content: url(ylw-arrow.png);
+content: url(./img/ylw-arrow.png);
 position: absolute;
 opacity: 0;
 transition: 0.2s;
